@@ -1,0 +1,124 @@
+/*
+package tn.esprit.gestionmagasin.entities;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+public class Classe {
+	@Id 
+	private String codeCL;
+	private String libelleCL;
+	private int nbrEtudiant ; 
+	private String specialite  ;
+	private String mail ;
+	private String groupe ;
+
+
+
+
+	@JsonIgnore
+	@OneToMany(mappedBy = "classe", cascade = CascadeType.ALL)
+	private List<Examen> examen;
+
+	@JsonIgnore
+	@OneToMany(mappedBy = "classe", cascade = CascadeType.ALL)
+	private List<Etudiant> etudiants;
+
+	@JsonIgnore
+	@OneToMany(mappedBy = "classe", cascade = CascadeType.ALL)
+	private List<ESP_Module> esp_Modules;
+
+	@JsonIgnore
+	@OneToMany(mappedBy = "classe", cascade = CascadeType.ALL)
+	private List<Module_Classe> moduleClasse ;
+
+	@JsonIgnore
+	@ManyToOne
+	@JoinColumn(name="anneeUniversitaire_id")
+	private AnneeUniversitaire anneeUniver ;
+
+	@JsonIgnore
+	@ManyToOne
+	@JoinColumn(name="code_dept")
+	private ESP_Dept espdept;
+	
+	
+	public String getCodeCL() {
+		return codeCL;
+	}
+	public void setCodeCL(String codeCL) {
+		this.codeCL = codeCL;
+	}
+	public String getLibelleCL() {
+		return libelleCL;
+	}
+	public void setLibelleCL(String libelleCL) {
+		this.libelleCL = libelleCL;
+	}
+	public int getNbrEtudiant() {
+		return nbrEtudiant;
+	}
+	public void setNbrEtudiant(int nbrEtudiant) {
+		this.nbrEtudiant = nbrEtudiant;
+	}
+	public String getSpecialite() {
+		return specialite;
+	}
+	public void setSpecialite(String specialite) {
+		this.specialite = specialite;
+	}
+	public List<Examen> getExamen() {
+		return examen;
+	}
+	public void setExamen(List<Examen> examen) {
+		this.examen = examen;
+	}
+	public List<emploi.com.tn.entities.Etudiant> getEtudiants() {
+		return etudiants;
+	}
+	public void setEtudiants(List<emploi.com.tn.entities.Etudiant> etudiants) {
+		this.etudiants = etudiants;
+	}
+	public AnneeUniversitaire getAnneeUniver() {
+		return anneeUniver;
+	}
+	public void setAnneeUniver(AnneeUniversitaire anneeUniver) {
+		this.anneeUniver = anneeUniver;
+	}
+	public List<Module_Classe> getModuleClasse() {
+		return moduleClasse;
+	}
+	public void setModuleClasse(List<Module_Classe> moduleClasse) {
+		this.moduleClasse = moduleClasse;
+	}
+	public String getMail() {return mail;}
+	public void setMail(String mail) {this.mail = mail;}
+
+
+	public List<ESP_Module> getEsp_Modules() {
+		return esp_Modules;
+	}
+	public void setEsp_Modules(List<ESP_Module> esp_Modules) {
+		this.esp_Modules = esp_Modules;
+	}
+	
+	public ESP_Dept getEspdept() {
+		return espdept;
+	}
+
+	public void setEspdept(ESP_Dept espdept) {
+		this.espdept = espdept;
+	}
+
+	public String getGroupe() {
+		return groupe;
+	}
+
+	public void setGroupe(String groupe) {
+		this.groupe = groupe;
+	}
+}
+*/
