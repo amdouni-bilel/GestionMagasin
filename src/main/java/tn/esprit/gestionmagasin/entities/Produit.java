@@ -37,11 +37,5 @@ public class Produit {
     @OneToMany(mappedBy = "produit", cascade = CascadeType.ALL)
     private List<DetailFacture> detailFactures;
 
-/* @ManyToOne
-    @JoinColumn(name="detailFacture_id")
-    private DetailFacture detailFacture;*/
 
-
-    /*    @OneToMany(mappedBy = "produit", cascade = CascadeType.ALL)
-    private List<DetailFacture> detailFactures;*/
 }

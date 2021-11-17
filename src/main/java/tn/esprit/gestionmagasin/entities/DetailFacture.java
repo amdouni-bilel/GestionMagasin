@@ -18,9 +18,6 @@ public class DetailFacture {
     private int porcentageRemise ;
     private int montantRemise ;
 
-/*    @OneToMany(mappedBy = "detailfact", cascade = CascadeType.ALL)
-    private List<Produit> produits;*/
-
     @ManyToOne
     @JoinColumn(name="facture_id")
     private Facture facture;

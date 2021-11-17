@@ -22,10 +22,7 @@ public class ClientImplementation implements IClientService {
 	}
 
 	@Override
-	public void editClient(Client client) {
-		clientRepository.save(client) ;
-
-	}
+	public void editClient(Client client) {clientRepository.save(client) ;}
 
 	@Override
 	public Client getClient(long id) {
@@ -38,9 +35,6 @@ public class ClientImplementation implements IClientService {
 	}
 
 	@Override
-	public void deleteClient(long id) {
-		clientRepository.deleteById(id);
-
-	}
+	public void deleteClient(long id) {clientRepository.deleteById(id);}
 
 	}

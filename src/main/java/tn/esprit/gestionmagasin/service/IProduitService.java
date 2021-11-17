@@ -9,6 +9,7 @@ import java.util.List;
 public interface IProduitService {
 	
 	public  void addProduit(Produit produit/*Date dateFacture, float monatantRemise, float monatantFacture, Boolean active, Long client*/);
+
 	public  void editProduit(Produit produit);
 	public  Produit getProduit(long id);
 	public  List<Produit> getProduits();

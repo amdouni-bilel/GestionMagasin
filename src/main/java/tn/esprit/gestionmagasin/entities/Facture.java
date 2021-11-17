@@ -24,8 +24,6 @@ public class Facture {
         @OneToMany(mappedBy = "facture", cascade = CascadeType.ALL)
         private List<DetailFacture> detailFactures;
 
-
-
         @ManyToOne
         @JoinColumn(name="client_id")
         private Client client;

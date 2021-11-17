@@ -26,14 +26,14 @@ public class ClientControleur {
 		return true;
 	}
 
-	@PutMapping("/client/{id}")
+	@PutMapping("/client")
 	public boolean update(@RequestBody Client col) {
 		clientService.editClient(col);
 		return true;
 	}
 
 	@GetMapping("/client/{id}")
-	public Client getById(@PathVariable("id") int id) {
+	public Client getById(@PathVariable("id") long id) {
 		System.out.println("----------> IDD : " + id);
 		Client col = clientService.getClient(id);
 		return col;
@@ -41,7 +41,7 @@ public class ClientControleur {
 	}
 
 	@DeleteMapping("/client/{id}")
-	public boolean  delete(@PathVariable int id) {
+	public boolean  delete(@PathVariable long id) {
 		clientService.deleteClient(id);
 		return true;
 	}
